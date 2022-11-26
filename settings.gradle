@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            // $rootDir 表示你项目的根目录
+            url = "$rootDir/repo"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            // $rootDir 表示你项目的根目录
+            url = "$rootDir/repo"
+        }
+    }
+}
+rootProject.name = "Sensors"
+include ':app'
+include ':plugin'
